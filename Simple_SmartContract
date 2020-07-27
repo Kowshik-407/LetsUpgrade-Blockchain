@@ -1,0 +1,33 @@
+pragma solidity ^0.4.17 < 0.6.12; 
+
+contract Transaction{
+    
+    string public owner;
+    uint public   value ;
+    string public purpose;
+    uint public   account_no;
+    
+    function Transaction(string newOwner, uint newValue, string newPurpose, uint newAccount_no) public{
+        
+        owner      =   newOwner;
+        value      =   newValue;
+        purpose    =   newPurpose;
+        account_no =   newAccount_no;
+        
+    }
+    
+    function setTransaction(string newOwner, uint newValue, string newPurpose, uint newAccount_no) public{
+        
+        owner      =   newOwner;
+        value      =   newValue;
+        purpose    =   newPurpose;
+        account_no =   newAccount_no;
+        
+    }
+    
+    function getTransaction() public view returns(string,uint,string,uint){
+        return(owner, value, purpose, account_no);
+    }
+    
+    
+}
