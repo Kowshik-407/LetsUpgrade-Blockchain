@@ -1,0 +1,44 @@
+pragma solidity ^0.4.17 < 0.6.12; 
+
+contract Marks{
+    
+    string public name;
+    uint public   rollno;
+    uint public   batch;
+    string public maths;
+    string public science;
+    string public social;
+    string public english;
+    string public status;
+    
+    function Marks(string newName, uint newRollno, uint newBatch, string Maths1, string Science1, string Social1, string English1, string Status1) public{
+        
+        name      =     newName;
+        rollno    =     newRollno;
+        batch     =     newBatch;
+        maths     =     Maths1;
+        science   =     Science1;
+        social    =     Social1;
+        english   =     English1;
+        status    =     Status1;
+    }
+    
+    function setNewMarks(string Maths1, string Science1, string Social1, string English1) public{
+
+        name      =     newName;
+        rollno    =     newRollno;
+        batch     =     newBatch;
+        maths     =     Maths1;
+        science   =     Science1;
+        social    =     Social1;
+        english   =     English1;
+        status    =     Status1;
+        
+    }
+    
+    function getNewCurrentMarks() public view returns(string,uint,string,string,string,string,string,string){
+        return(name, rollno, batch, maths, science, social, english,status);
+    }
+    
+    
+}
