@@ -23,7 +23,7 @@ contract Marks{
         status    =     Status1;
     }
     
-    function setNewMarks(string Maths1, string Science1, string Social1, string English1) public{
+    function setNewMarks(string newName, uint newRollno, uint newBatch, string Maths1, string Science1, string Social1, string English1) public{
 
         name      =     newName;
         rollno    =     newRollno;
